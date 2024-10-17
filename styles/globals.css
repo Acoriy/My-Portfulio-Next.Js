@@ -49,3 +49,16 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+/*  */
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #131424;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#F13024, white ,#F13024 );
+  border-radius: 10px;
+}

@@ -40,7 +40,7 @@ const aboutData = [
         <SiTailwindcss key="tailwind"/>,
         <SiBootstrap key="bootstrap"/>,
         <SiFramer key="framer"/>,
-        <FaWordpress key="wordpress" />
+        // <FaWordpress key="wordpress" />
       ],
       },
       {
@@ -76,6 +76,10 @@ const aboutData = [
       {
         title: "website creator - Freelancer ",
         stage: "2024 - Currently",
+      },
+      {
+        title: "Enquêteur RGPH 2024 - Haut Commissariat au Plan du Maroc",
+        stage: "August 2024 – September 2024",
       },
       {
         title: "Email Marketing Specialist Full-time - ADSENTYA SARL in Ouled Teima",
@@ -222,7 +226,7 @@ const About = () => {
                   {/* experiences */}
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                        <CountUp start={0} end={2} duration={5}/> +
+                        <CountUp start={0} end={1} duration={5}/> +
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                         Years of experience
@@ -231,7 +235,7 @@ const About = () => {
                   {/* clients */}
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                        <CountUp start={0} end={17} duration={5}/> +
+                        <CountUp start={0} end={5} duration={5}/> +
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                         Satisfied clients 
@@ -240,7 +244,7 @@ const About = () => {
                   {/* project */}
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                        <CountUp start={0} end={20} duration={5}/> +
+                        <CountUp start={0} end={10} duration={5}/> +
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                         Finishid projects 
@@ -249,7 +253,7 @@ const About = () => {
                   {/* awards جوائز */}
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                        <CountUp start={0} end={5} duration={5}/> +
+                        <CountUp start={0} end={1} duration={5}/> +
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                         Winning awards
@@ -264,7 +268,7 @@ const About = () => {
              initial="hidden"
              animate="show"
              exit="hidden" 
-             className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+             className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-auto">
               <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
                 {aboutData.map((item , itemIndexInfo)=>{
                   return (<div key={itemIndexInfo}

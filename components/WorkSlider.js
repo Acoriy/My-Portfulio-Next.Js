@@ -5,19 +5,23 @@ export const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/work1.jpg',
+          link:"https://burger-burst.netlify.app"
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/work2.jpg',
+           link:"https://portfulio-templet.netlify.app"
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/work3.jpg',
+           link:"https://doctore-landing-page.vercel.app/"
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/work4.jpg',
+           link:"https://beatblitz-products.netlify.app/"
         },
       ],
     },
@@ -25,19 +29,23 @@ export const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/work5.jpg',
+           link:"https://trippixietravel.netlify.app/"
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/work4.jpg',
+           link:"https://beatblitz-products.netlify.app/"
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/work2.jpg',
+           link:"https://portfulio-templet.netlify.app"
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/work3.jpg',
+           link:"https://doctore-landing-page.vercel.app/"
         },
       ],
     },
@@ -64,6 +72,7 @@ import {BsArrowRight} from 'react-icons/bs';
 
 // next image
 import Image from 'next/image';
+import Link from 'next/link';
 
 const WorkSlider = () => {
   return (
@@ -82,7 +91,7 @@ const WorkSlider = () => {
                 {slide.images.map((image , index)=>{
                   return <div className='relative rounded-lg  overflow-hidden 
                       flex items-center justify-center group' key={index}>
-                    <div className='flex items-center justify-center relative overflow-hidden group'>
+                    <Link href={image.link} target='_blank'><div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt=''/>
                       {/* overlay gradient */}
@@ -105,7 +114,7 @@ const WorkSlider = () => {
                             </div>
                           </div>
                        </div>
-                    </div>
+                    </div></Link>
                     
                   </div>
                 })}

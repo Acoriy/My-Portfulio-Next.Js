@@ -38,11 +38,11 @@ const serviceData = [
     title: 'Copywriting',
     description: 'Persuasive writing to maximize impact and customer engagement.',
   },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Complete SEO:visibility, performance, content , measurable results.',
-  },
+  // {
+  //   icon: <RxRocket />,
+  //   title: 'SEO',
+  //   description: 'Complete SEO:visibility, performance, content , measurable results.',
+  // },
 ];
 
 // import required modules
