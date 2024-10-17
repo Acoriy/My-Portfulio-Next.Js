@@ -99,6 +99,16 @@ const aboutData = [
     title: "Certificates",
     info: [
       {
+        title: "Attestation Participation RGPH 2024 - Haut Commissariat au Plan du Maroc",
+        stage: "2024",
+        link:"https://drive.google.com/file/d/1clh7o2599EKX8-R_GhmG0MGcP8O71NJX/view?usp=sharing"
+      },
+      {
+         title: "Attestation Formation Adistances RGPH 2024 - Haut Commissariat au Plan du Maroc",
+        stage: "2024",
+        link:"https://drive.google.com/file/d/12rhFc03zUTLbcng-8uokd6x46xDNapIT/view?usp=sharing"
+      },
+      {
         title: "Utilisez HTML5 pour l\"interface utilisateur - OpenClassrooms",
         stage: "2023",
         link:"https://drive.google.com/file/d/12DpPn3qRrkTBlcxtZeHyZ9uQ8kJR3nbo/view?usp=sharing"
