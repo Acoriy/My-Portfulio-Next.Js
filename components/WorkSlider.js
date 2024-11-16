@@ -10,13 +10,13 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/work2.jpg",
-          link: "https://portfulio-templet.netlify.app",
+          path: "/work-7.jpg",
+          link: "https://education-landing-page-reactjs.netlify.app",
         },
         {
           title: "title",
-          path: "/work3.jpg",
-          link: "https://doctore-landing-page.vercel.app/",
+          path: "/work2.jpg",
+          link: "https://portfulio-templet.netlify.app",
         },
         {
           title: "title",
@@ -30,7 +30,7 @@ export const workSlides = {
         {
           title: "title",
           path: "/work5.jpg",
-          link: "https://trippixietravel.netlify.app/",
+          link: "https://tippixtravel.netlify.app",
         },
         {
           title: "title",
