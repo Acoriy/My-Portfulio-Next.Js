@@ -10,19 +10,19 @@ const Socials = () => {
         <RiFacebookLine/>
      </Link> */}
     <Link href={'https://instagram.com/sofyane_acoriy'} target="_blank" className="hover:text-accent transition-all duration-300">
-        <RiInstagramLine/>
+        <RiInstagramLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
      <Link href={'https://wa.me/212689995840'} target="_blank" className="hover:text-accent transition-all duration-300">
-        <RiWhatsappLine/>
+        <RiWhatsappLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
      <Link  href={'https://linkedin.com/in/sofyane-acoriy-788b97235'} target="_blank" className="hover:text-accent transition-all duration-300">
-       <RiLinkedinLine/>
+       <RiLinkedinLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
      <Link href={'https://github.com/Acoriy'} target="_blank" className="hover:text-accent transition-all duration-300">
-        <RiGithubLine/>
+        <RiGithubLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
      <Link href={'https://discord.com/invite/4xGGnCHw'} target="_blank" className="hover:text-accent transition-all duration-300">
-        <RiDiscordLine/>
+        <RiDiscordLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
     
   </div>

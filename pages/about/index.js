@@ -156,7 +156,8 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index , setIndex] = useState(0);
-  console.log(index);
+  // console.log(index);
+  
    //  text
   const sentence = " I\'m Frontend  developer .";
   const letters = Array.from(sentence);
