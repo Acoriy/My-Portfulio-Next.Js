@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // icons
-import {RiWhatsappLine , RiInstagramLine , RiLinkedinLine , RiGithubLine , RiDiscordLine } from 'react-icons/ri';
+import {RiWhatsappLine , RiInstagramLine , RiLinkedinLine , RiGithubLine , RiDiscordLine ,RiBehanceLine , RiDribbbleLine } from 'react-icons/ri';
 
 const Socials = () => {
   return <div className="flex items-center justify-center gap-x-5 text-lg xl:mx-[40px]">
@@ -21,8 +21,14 @@ const Socials = () => {
      <Link href={'https://github.com/Acoriy'} target="_blank" className="hover:text-accent transition-all duration-300">
         <RiGithubLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
-     <Link href={'https://discord.com/invite/4xGGnCHw'} target="_blank" className="hover:text-accent transition-all duration-300">
+     {/* <Link href={'https://discord.com/invite/4xGGnCHw'} target="_blank" className="hover:text-accent transition-all duration-300">
         <RiDiscordLine className="2xl:w-[30px] 2xl:h-[60px]"/>
+     </Link> */}
+     <Link href={'https://www.behance.net/acoriysofyane'} target="_blank" className="hover:text-accent transition-all duration-300">
+        <RiBehanceLine className="2xl:w-[30px] 2xl:h-[60px]"/>
+     </Link>
+     <Link href={'https://dribbble.com/SofyaneAcoriy10'} target="_blank" className="hover:text-accent transition-all duration-300">
+        <RiDribbbleLine className="2xl:w-[30px] 2xl:h-[60px]"/>
      </Link>
     
   </div>

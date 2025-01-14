@@ -8,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaGit,
+  FaFigma,
 
 } from "react-icons/fa";
 
@@ -49,7 +50,7 @@ const aboutData = [
       },
       {
         title: "Outher",
-        icons: [ <SiCanva key="canva"/>, <SiAdobephotoshop key="photoshop"/> , <FaGit key="git"/>],
+        icons: [ <SiCanva key="canva"/>, <SiAdobephotoshop key="photoshop"/> , <FaFigma key="figma"/> , <FaGit key="git"/>],
       },
     ],
   },
@@ -98,6 +99,16 @@ const aboutData = [
   {
     title: "Certificates",
     info: [
+      {
+        title: "Certificate of achievement UX/UI Design Bootcamp",
+        stage: "2024",
+        link:"https://drive.google.com/file/d/1sJ3pTrO791S4b5FCx3qeIx4JKHKy_xic/view?usp=sharing"
+      },
+      {
+        title: "Digital Marketing training",
+        stage: "2024",
+        link:"https://drive.google.com/file/d/1ed0W2tvhioeO-RaTpq-tQqIH5TeHJxHp/view?usp=sharing"
+      },
       {
         title: "Attestation Participation RGPH 2024 - Haut Commissariat au Plan du Maroc",
         stage: "2024",
