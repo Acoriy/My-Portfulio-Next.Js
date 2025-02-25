@@ -15,8 +15,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/work2.jpg",
-          link: "https://portfulio-templet.netlify.app",
+          path: "/work8.jpg",
+          link: "https://moblessa-ai.netlify.app/",
         },
         {
           title: "title",
@@ -78,7 +78,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[400px]"
+      className="h-[280px] sm:h-[480px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
