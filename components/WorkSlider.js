@@ -5,8 +5,8 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/work1.jpg",
-          link: "https://burger-burst.netlify.app",
+          path: "/work9.jpg",
+          link: "https://clothify-blush.vercel.app/",
         },
         {
           title: "title",
@@ -20,8 +20,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/work4.jpg",
-          link: "https://beatblitz-products.netlify.app/",
+          path: "/work1.jpg",
+          link: "https://burger-burst.netlify.app/",
         },
       ],
     },
@@ -34,8 +34,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/work-6.jpg",
-          link: "https://fylolandingpagea.netlify.app/",
+          path: "/work4.jpg",
+          link: "https://beatblitz-products.netlify.app/",
         },
         {
           title: "title",

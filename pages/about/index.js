@@ -1,4 +1,4 @@
-import  {useState } from "react";
+import  {useEffect, useState } from "react";
 
 // icons
 import {
@@ -75,7 +75,7 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "website creator - Freelancer ",
+        title: "FREELANCE – DÉVELOPPEUR FRONT- END & UI/UX DESIGNER & SOCIAL MEDIA MARKETING",
         stage: "2024 - Currently",
       },
       {
@@ -164,15 +164,25 @@ import {fadeIn} from "../../variants";
 // counter 
 import CountUp from "react-countup";
 
+const phrases = ["I'm Frontend Developer", "I'm UX/UI Designer"];
+
 
 const About = () => {
   const [index , setIndex] = useState(0);
-  // console.log(index);
-  
-   //  text
-  const sentence = " I\'m Frontend  developer .";
-  const letters = Array.from(sentence);
+  const [indexAnimate , setIndexAniamte] =useState(0)
 
+  // Textes :
+  // const sentence = " I\'m Frontend  developer .";
+  // const letters = Array.from(sentence);
+
+  const letters = phrases[indexAnimate].split("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+        setIndexAniamte((prevIndex) => (prevIndex + 1) % phrases.length);
+    }, 4000); // Change every 4 seconds
+    return () => clearInterval(interval);
+}, []);
 
   return <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
     <Circles/>
@@ -192,17 +202,8 @@ const About = () => {
         xl:flex-row gap-x-6 ">
            {/* text */}
            <div className="flex-1 flex flex-col justify-center">
-              {/* <motion.h2 
-               variants={fadeIn("right" , 0.2)}
-               initial="hidden"
-               animate="show"
-               exit="hidden"
-               className="h2 xl:z-10">
-                {/* Captivating <span className="text-accent">stories</span> birth magnificent designs.  */}
-                {/* Hello World ! I'm <span className="text-accent">Frontend </span> developer .  */}
-              {/* </motion.h2> */}
-              {/* pour testing ----------------------  */}
-              <motion.h2
+             
+              {/* <motion.h2
                   initial="hidden"
                   animate="visible"
                   variants={{
@@ -210,7 +211,7 @@ const About = () => {
                       visible: {
                           opacity: 1,
                           transition: {
-                              staggerChildren: 0.2,
+                              staggerChildren: 0.1,
                           },
                       },
                   }}
@@ -227,7 +228,38 @@ const About = () => {
                           {char}
                       </motion.span>
                   ))}
-              </motion.h2>
+              </motion.h2> */}
+
+<motion.h2
+            key={indexAnimate}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                    opacity: 1,
+                    transition: {
+                        staggerChildren: 0.1,
+                    },
+                },
+            }}
+            className="h2 xl:z-10"
+        >
+            <span className="text-accent">Hi ! </span>
+            {letters.map((char, itemIndexText) => (
+                <motion.span
+                    key={itemIndexText}
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1 },
+                    }}
+                >
+                    {char}
+                </motion.span>
+            ))}
+        </motion.h2>
+
               <motion.p 
                 variants={fadeIn("right" , 0.4)}
                 initial="hidden"
