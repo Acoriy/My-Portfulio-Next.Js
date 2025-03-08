@@ -20,8 +20,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/work1.jpg",
-          link: "https://burger-burst.netlify.app/",
+          path: "/work10.jpg",
+          link: "https://landingpage-hobank.netlify.app/",
         },
       ],
     },
@@ -29,8 +29,8 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/work5.jpg",
-          link: "https://tippixtravel.netlify.app",
+          path: "/work1.jpg",
+          link: "https://burger-burst.netlify.app/",
         },
         {
           title: "title",
